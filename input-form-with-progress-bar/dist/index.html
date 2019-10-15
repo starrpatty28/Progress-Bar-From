@@ -9,7 +9,7 @@
 <body>
 <!-- partial:index.partial.html -->
 <section class="section">
-	<h1>So you think you can create an ID?</h1>
+	<h1>Congratulations On Your First Step To Your Childs Investment!</h1>
 
 	<div class="form-progress">
 		<progress class="form-progress-bar" min="0" max="100" value="0" step="33" aria-labelledby="form-progress-completion"></progress>
@@ -20,9 +20,7 @@
 		<div class="form-progress-indicator four"></div>
 		<div class="form-progress-indicator five"></div>
 		<div class="form-progress-indicator six"></div>
-
-
-		
+	
 		<p id="form-progress-completion" class="js-form-progress-completion sr-only" aria-live="polite">0% complete</p>
 	</div>
 	
@@ -32,18 +30,19 @@
 		<!-- Step one -->
 		<div class="form-step js-form-step" data-step="1">
 
-			<p class="form-instructions"><strong>Click the continue button to show form progression.</strong><br>
-				Please fill out the fields below so we can learn some information about you. We promise to store these on Post-It<sup><small>TM</small></sup> notes around the office.</p>
+			<p class="form-instructions">Please completely fill out the fields below so we can properly input your information. None of your information is shared with anyone else.<br>
+				<strong>Click the continue button to move on to next page.</strong>
+			</p>
 
 			<form action="" name="form-step-1">
 				<div class="fieldgroup">
 					<input type="text" name="firstName" id="firstName" />
-					<label for="firstName">First name</label>
+					<label for="firstName">First Name</label>
 				</div>
 
 				<div class="fieldgroup">
 					<input type="text" name="lastName" id="lastName" />
-					<label for="lastName">Last name</label>
+					<label for="lastName">Last Name</label>
 				</div>
 
 				<div class="fieldgroup">
@@ -52,8 +51,23 @@
 				</div>
 
 				<div class="fieldgroup">
-					<input type="text" name="postalCode" id="postalCode" />
-					<label for="postalCode">Postal code</label>
+					<input type="text" name="Address" id="Address" />
+					<label for="Address">Address</label>
+				</div>
+
+				<div class="fieldgroup">
+						<input type="text" name="City" id="City" />
+						<label for="City">City</label>
+				</div>
+
+				<div class="fieldgroup">
+						<input type="text" name="State" id="State" />
+						<label for="State">State</label>
+				</div>
+
+				<div class="fieldgroup">
+						<input type="text" name="postalCode" id="postalCode" />
+						<label for="postalCode">Postal code</label>
 				</div>
 
 				<div class="buttons">
@@ -68,15 +82,34 @@
 			<!-- Step two -->
 			<div class="form-step js-form-step waiting hidden" data-step="2">
 
-				<p class="form-instructions"><strong>Click the continue button to show form progression.</strong>
-						<br> Please fill in the token below with yesterday's date plus the timestamp from the day of your birth (expressed as an integer) to the power of fourteen divided by two.</p>
+					<p class="form-instructions">Please completely fill out the fields below so we can properly input your information. None of your information is shared with anyone else.<br>
+						<strong>Click the continue button to move on to next page.</strong>
+					</p>
+
+					<form action="" name="form-step-2">
+					<div class="fieldgroup">
+						<input type="text" name="childsFirstName" id="childsFirstName"/>
+							<label for="childsFirstName">Childs First Name</label>
+					</div>
 
 				<form action="" name="form-step-2">
-						<div class="fieldgroup">
-								<input type="text" name="token" id="token" />
-								<label for="token">Token</label>
-						</div>
+					<div class="fieldgroup">
+						<input type="text" name="childsLastName" id="childsLastName" />
+							<label for="childsLastName">Childs Last Name</label>
+				</div>
 
+				<form action="" name="form-step-2">
+					<div class="fieldgroup">
+						<input type="text" name="childsBirthdate" id="childsBirthday" />
+							<label for="childsBirthday">Birthdate (mm/dd/year)</label>
+					</div>
+				
+					<form action="" name="form-step-2">
+						<div class="fieldgroup">
+							<input type="text" name="childsLast4SSN" id="childsLast4SSN" />
+								<label for="childsLast4SSN">Last 4 SSN</label>
+						</div>
+						
 						<div class="buttons">
 								<button type="button" class="btn btn-alt js-reset">Reset</button>
 
@@ -111,7 +144,6 @@
 								<button type="submit" class="btn">Continue</button>
 						</div>
 				</form>
-
 		</div>
 		
 		

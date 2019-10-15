@@ -25,7 +25,7 @@ h1 {
 .section:before {
   content: "";
   width: 100%;
-  background: #0ce479;
+  background: #1d414f;
   height: 170px;
   position: absolute;
   top: 0;
